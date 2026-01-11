@@ -1,13 +1,10 @@
 import React from 'react'
+import Profile from './components/profile'
 
 const App = () => {
   return (
     <div className = "parent">
-      <div className="card">
-        <h1>Chinmayi H M</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci harum quis, hic accusamus non nulla cumque impedit vel sint?</p>
-        <button>View Profile</button>
-      </div>
+      <Profile user="Chinmayi" age={18}/>// numbers has to be passed using curly braces only
     </div>
   )
 }
