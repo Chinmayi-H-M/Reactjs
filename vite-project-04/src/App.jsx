@@ -6,13 +6,13 @@ const App = () => {
       <div className="card">
         <div className="top">
           <img src="" alt="" />
-          <button></button>
+          <button>Save</button>
         </div>
         <div className="center">
           <h2>amazon</h2>
         </div>
         <div className="bottom">
-          
+
         </div>
       </div>
     </div>
