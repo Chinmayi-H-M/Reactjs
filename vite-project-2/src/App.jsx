@@ -6,7 +6,7 @@ const App = () => {
   const user = "Chinmayi"
   const age= 20
   return (
-    <div>
+    <div classname="parent">
       <Navbar/>
       <Card />
     </div>
