@@ -1,4 +1,5 @@
 import React from 'react'
+import {Bookmark} from 'lucide-react'
 
 const App = () => {
   return (
@@ -6,7 +7,7 @@ const App = () => {
       <div className="card">
         <div className="top">
           <img src="" alt="" />
-          <button>Save</button>
+          <button>Save<Bookmark /></button>
         </div>
         <div className="center">
           <h2>amazon</h2>
