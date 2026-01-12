@@ -18,7 +18,9 @@ const App = () => {
           </div>
         </div>
         <div className="bottom">
-
+            <div>
+              
+            </div>
         </div>
       </div>
     </div>
