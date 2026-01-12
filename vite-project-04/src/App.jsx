@@ -19,7 +19,10 @@ const App = () => {
         </div>
         <div className="bottom">
             <div>
-              
+              <div>
+                <h3>$120/hr</h3>
+                <p>Mumbai,India</p>
+              </div>
             </div>
         </div>
       </div>
