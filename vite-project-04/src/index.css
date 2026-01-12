@@ -27,5 +27,12 @@ body{
 }
 .top button{
   display:flex;
-  
+  align-items:center;
+  border:1px solid #dadada;
+  padding:4px 8px;
+  font-size:11px;
+  border-radius:5px;
+  gap: 3px;
+  background-color: transparent;
+  color:#b1b1b1;
 }
