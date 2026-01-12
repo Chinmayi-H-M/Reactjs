@@ -13,7 +13,11 @@ body{
   background-color: white;
   border-radius:10px;
   padding:30px;
-}.card .top{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .top{
   display:flex;
   align-items:center;
   justify-content: space-between;
@@ -35,4 +39,14 @@ body{
   gap: 3px;
   background-color: transparent;
   color:#b1b1b1;
+  padding-top:15px;
+}
+.center h3{
+  font-size:18px;
+  font-weight:400;
+}
+.center h3 span{
+  font-size:10px;
+  font-weight:400;
+  color:#8b8b8b;
 }
