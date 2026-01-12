@@ -23,6 +23,7 @@ const App = () => {
                 <h3>$120/hr</h3>
                 <p>Mumbai,India</p>
               </div>
+              <button>Apply now</button>
             </div>
         </div>
       </div>
