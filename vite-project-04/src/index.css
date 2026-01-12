@@ -12,4 +12,11 @@ body{
   width:250px;
   background-color: white;
   border-radius:10px;
+}.card .top{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.top img{
+  height:30px;
 }
