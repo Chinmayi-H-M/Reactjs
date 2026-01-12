@@ -6,11 +6,16 @@ const App = () => {
     <div className="parent">
       <div className="card">
         <div className="top">
-          <img src="" alt="" />
+          <img src="https://i.pinimg.com/736x/36/ff/72/36ff72fc8d310f1353ecb2e5862296ab.jpg" alt="" />
           <button>Save<Bookmark /></button>
         </div>
         <div className="center">
-          <h2>amazon</h2>
+          <h3>amazon <span>5 days ago</span></h3>
+          <h2>Senior UI/UX Designer</h2>
+          <div>
+            <h4>Part time</h4>
+            <h4>Senior level</h4>
+          </div>
         </div>
         <div className="bottom">
 
