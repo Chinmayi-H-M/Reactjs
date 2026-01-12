@@ -19,8 +19,13 @@ body{
   justify-content: space-between;
 }
 .top img{
-  height:30px;
-  width:30px;
+  height:32px;
+  width:32px;
   border-radius:50%;
   border:1px solid black;
+  padding:2px;
+}
+.top button{
+  display:flex;
+  
 }

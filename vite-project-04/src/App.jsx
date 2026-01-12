@@ -7,7 +7,7 @@ const App = () => {
       <div className="card">
         <div className="top">
           <img src="https://i.pinimg.com/736x/36/ff/72/36ff72fc8d310f1353ecb2e5862296ab.jpg" alt="" />
-          <button>Save<Bookmark /></button>
+          <button>Save<Bookmark size={12} /></button>
         </div>
         <div className="center">
           <h3>amazon <span>5 days ago</span></h3>
