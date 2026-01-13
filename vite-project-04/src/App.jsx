@@ -91,4 +91,35 @@ const App = () => {
     image:
       "https://i.pinimg.com/736x/1d/47/8f/1d478f3c9c4d9c1f2d60a3f5d0e7b4a4.jpg",
   },
-  
+  {
+    id: 9,
+    company: "Flipkart",
+    posted: "3 days ago",
+    title: "UI Engineer",
+    tags: ["Full time", "Mid level"],
+    rate: "$90/hr",
+    location: "Bangalore, India",
+    image:
+      "https://i.pinimg.com/736x/5c/8a/4a/5c8a4a3b5c6f8f9c1d7e6a4c3f8b5a1e.jpg",
+  },
+  {
+    id: 10,
+    company: "Swiggy",
+    posted: "2 weeks ago",
+    title: "Design Lead",
+    tags: ["Full time", "Senior level"],
+    rate: "$150/hr",
+    location: "Bangalore, India",
+    image:
+      "https://i.pinimg.com/736x/8f/2c/9d/8f2c9d7e6a5b4c3d2e1f9a8b7c6d5e4f.jpg",
+  },
+];
+
+  return (
+    <div className="parent">
+      <Card />
+    </div>
+  )
+}
+
+export default App
