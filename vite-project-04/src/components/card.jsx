@@ -1,7 +1,10 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
 
-
+const card = (props) => {
+    console.log(props);
+  return (
+    
       <div className="card">
         <div className="top">
           <img src={props.image} alt="" />
