@@ -97,7 +97,7 @@ const App = () => {
       rate: "$140/hr",
       location: "Remote",
       image:
-        "",
+        "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 9,
@@ -109,7 +109,7 @@ const App = () => {
       rate: "$90/hr",
       location: "Bangalore, India",
       image:
-        "",
+        "https://images.unsplash.com/photo-1654573817889-296cad084c97?q=80&w=862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 10,
@@ -121,7 +121,7 @@ const App = () => {
       rate: "$150/hr",
       location: "Bangalore, India",
       image:
-        "",
+        "https://images.unsplash.com/photo-1669827014193-be4fad074832?q=80&w=698&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
