@@ -115,9 +115,12 @@ const App = () => {
   },
 ];
 
+
   return (
     <div className="parent">
-      <Card />
+      {jobs.map(function(elem){
+        return <Card />
+      })}
     </div>
   )
 }

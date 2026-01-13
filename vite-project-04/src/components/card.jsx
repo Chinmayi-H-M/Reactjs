@@ -17,7 +17,7 @@ const card = () => {
             <h4>Senior level</h4>
           </div>
         </div>
-        <hr class="divider"></hr>
+        <hr className="divider"></hr>
         <div className="bottom">
             <div>
                 <h3>$120/hr</h3>
