@@ -12,18 +12,19 @@ const App = () => {
         <div className="center">
           <h3>amazon <span>5 days ago</span></h3>
           <h2>Senior UI/UX Designer</h2>
-          <div>
+          <div className='tag'>
             <h4>Part time</h4>
             <h4>Senior level</h4>
           </div>
         </div>
+        <hr class="divider"></hr>
         <div className="bottom">
             <div>
                 <h3>$120/hr</h3>
                 <p>Mumbai,India</p>
-            
-              <button>Apply now</button>
             </div>
+              <button>Apply now</button>
+            
         </div>
       </div>
     </div>
