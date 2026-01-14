@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from './navbar.jsx'
 
 const section1 = () => {
   return (
-    <div className='h-screen w-full bg-blue-900'>
-      
+    <div className='h-screen w-full'>
+      <Navbar />
     </div>
   )
 }
