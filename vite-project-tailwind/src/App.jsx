@@ -1,9 +1,13 @@
 import React from 'react'
+import Section1 from './assets/components/section1'
+import Section2 from './assets/components/section2'
+
 
 const App = () => {
   return (
     <div>
-      <section1 />
+      <Section1 />
+      <Section2 />
     </div>
   )
 }
