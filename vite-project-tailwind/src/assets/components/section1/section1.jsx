@@ -6,7 +6,7 @@ const section1 = (props) => {
   return (
     <div className='h-screen w-full'>
       <Navbar />
-      <PageContent />
+      <PageContent users={props.users} />
     </div>
   )
 }
