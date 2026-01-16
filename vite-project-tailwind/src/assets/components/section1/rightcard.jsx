@@ -4,9 +4,9 @@ import RightCardContent from './RightCardContent';
 
 const RightCard = (props) => {
   return (
-    <div className='h-full w-80 rounded-4xl relative overflow-hidden'>
+    <div className='h-full w-80 shrink-0 rounded-4xl relative overflow-hidden'>
       <img className='h-full w-full object-cover' src={props.img} alt="" />
-      <RightCardContent tag={props.tag}/>
+      <RightCardContent tag={props.tag} id={props.id}/>
     </div>
 
   )

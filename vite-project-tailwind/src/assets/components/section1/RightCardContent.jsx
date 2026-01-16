@@ -6,8 +6,8 @@ const RightCardContent = (props) => {
   return (
   
       <div className="absolute top-0 left-0 h-full w-full  p-5 flex flex-col justify-between">
-          <h2 className='bg-white m-1 text-2xl font-bold rounded-full h-10 w-10 flex justify-center items-center '>
-            1
+          <h2 className='bg-white text-xl font-bold rounded-full h-12 w-12 flex justify-center items-center '>
+             {props.id+1}
           </h2>
           <div>
           <p className='text-white  text-sm mt-30'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum autem doloribus vel aut cum earum atque! Iure aperiam dolor quidem!</p>
