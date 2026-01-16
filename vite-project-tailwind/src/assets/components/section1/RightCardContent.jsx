@@ -12,7 +12,7 @@ const RightCardContent = (props) => {
           <div>
           <p className='text-white  text-sm mt-30'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum autem doloribus vel aut cum earum atque! Iure aperiam dolor quidem!</p>
           <div className='flex justify-between'>
-            <button style={{backgroundcolor:props.color}} className="m-2 text-white font-semibold px-7 py-3 rounded-full text-lg">Satisfied</button>
+            <button style={{backgroundColor:props.color}} className="m-2 text-white font-semibold px-7 py-3 rounded-full text-lg">Satisfied</button>
             <button className="bg-blue-600 m-2 text-white font-semibold px-4 py-3 rounded-full text-lg"><MoveRight /></button>
           </div>
       </div>
