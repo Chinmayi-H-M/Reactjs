@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from './input.jsx'
 
 const App = () => {
 
@@ -17,7 +18,9 @@ const App = () => {
       <button onClick={()=>{
         console.log("Clicked from arrow function");
       }}>Click here arrow function</button>
+      <Input/>
     </div>
+    
   )
 }
 
