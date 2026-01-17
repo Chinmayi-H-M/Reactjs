@@ -27,10 +27,11 @@ const input = () => {
 
 export default input
 
-//useEffect-api and all it does not effct the main react function
-//useContext-Slightly complex
+//useEffect-api and all it does not effct the main react function and to manage states
+//useContext-Slightly complex,
 //useReducer- very complex
 //useState-change of state
 //useMemo-helps in optimization
 //useCallback - helps is optimization
+//useEffect - side effects handle karne ke liye (jaise API call, DOM manupulation, event listener).
 
