@@ -28,10 +28,11 @@ const input = () => {
 export default input
 
 //useEffect-api and all it does not effct the main react function and to manage states
-//useContext-Slightly complex,
-//useReducer- very complex
+//useContext-Slightly complex,global states ko manage karne ke liye without prop drilling
+//useReducer- very complex state management ke liye (Redux jaisa chota version)
 //useState-change of state
 //useMemo-helps in optimization
 //useCallback - helps is optimization
 //useEffect - side effects handle karne ke liye (jaise API call, DOM manupulation, event listener).
+//useref-mutable values hold karne ke liye jo re-render trigger na karein ya DOM access karne ke liye
 
