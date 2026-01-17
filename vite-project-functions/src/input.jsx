@@ -26,3 +26,7 @@ const input = () => {
 }
 
 export default input
+
+//useEffect-api and all it does not effct the main react function
+
+//useState-change of state
