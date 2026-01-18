@@ -3,8 +3,10 @@ import React, { useState } from 'react'
 const App = () => {
 
   const [a,setA] = useState(20)
+  const [name, setname] = useState("Chinmayi")
   function onclickis(){
     setA(8);
+    setname("CS");
   }
   return (
     <div>
