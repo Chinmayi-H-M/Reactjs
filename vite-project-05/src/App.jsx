@@ -1,11 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
 
-  let a =20;
-  function onclicklis(){
-     a=89;
-  }
+  const [a,setA] = useState(20)
   return (
     <div>
       <h1>Value  os a is {a}.</h1>
