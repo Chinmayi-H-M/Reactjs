@@ -9,6 +9,13 @@ const App = () => {
     setname("CS");
   }
   const [num, setnum] = useState(0)
+  function increaseNum(){
+    setnum(num+1);
+  }
+  function decreaseNum(){
+    setnum(num-1);
+  }
+
   return (
     <div>
       <h1>Value  os a is {a}.</h1>
