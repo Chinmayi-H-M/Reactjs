@@ -8,10 +8,15 @@ const App = () => {
     setA(8);
     setname("CS");
   }
+  const [num, setnum] = useState(0)
   return (
     <div>
       <h1>Value  os a is {a}.</h1>
       <button onClick={onclickis}>Click</button>
+
+      <h1>{num}</h1>
+      <button onClick={increaseNum}>Increase</button>
+      <button onClick={decreaseNum}>Decrease</button>
     </div>
   )
 }
