@@ -18,6 +18,11 @@ const App = () => {
   function jump5Num(){
     setnum(num+5);
   }
+  function btnclicked(){
+    console.log(num);
+    setnum(num+5);
+    console.log(num);//inconsole we will get the previous only because setnum runs in asysnchronous manner so console.printts first then the ui gets updated 
+  }
 
   return (
     <div>
@@ -28,6 +33,7 @@ const App = () => {
       <button onClick={increaseNum}>Increase</button>
       <button onClick={decreaseNum}>Decrease</button>
       <button onClick={jump5Num}>Jump by 5</button>
+      <button onClick={btnClicked}>Click</button>
     </div>
   )
 }
