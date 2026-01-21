@@ -4,8 +4,11 @@ const usestate = () => {
     const [num, setnum] = useState({user:'Chinmayi',age:20})
 
     const btnClicked=()=>{
-        const newNum={...num};
-        
+        const newNum={...num};//Destructuring
+        newNum.user='sharan'
+
+        setnum(newNum)
+
     }
   return (
     <div>
