@@ -1,0 +1,18 @@
+input{
+  padding:10px;
+  margin:10px;
+  background-color: gainsboro;
+  border:none;
+  color:blue;
+}
+form{
+  display:flex;
+  flex-direction: column;
+  width:fit-content;
+}
+button{
+  background-color:rgb(114, 114, 146);
+  padding:10px;
+  margin:10px;
+  border:none;
+}
