@@ -1,11 +1,12 @@
 
 const App = () => {
+  const [Title, setTitle] = useState('')
 
   const submitHandler = (e) =>{
     e.preventDefault()
-    console.log('Form submitted');
+    console.log('Form submitted by',Title);
   }
-  const [Title, setTitle] = useState(second)
+  
   return (
     <div>
       <form onSubmit={(e)=>{
@@ -13,8 +14,9 @@ const App = () => {
       }}>
         <input type="text" 
         placeholder='Enter ur name'
+        value={Title}
         onChange={(e)=>{
-          console.log(e.target.value);
+          setTitle(e.target.value);
         }}
         />
         <button>Submit</button>
