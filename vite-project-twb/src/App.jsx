@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 const App = () => {
   const [Title, setTitle] = useState('')
@@ -24,3 +25,4 @@ const App = () => {
     </div>
   )
 }
+export default App
