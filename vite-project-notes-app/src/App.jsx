@@ -3,9 +3,13 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <form classname="flex items-center ">
-        <input type="text" placeholder='Enter task heading' />
-        <textarea placeholder='Enter details' id="details" name='details'/>
+      <form className="flex justify-between flex-col p-10">
+        <input type="text" 
+        placeholder='Enter task heading' 
+        className="p-2 border border-gray-300 rounded-md"/>
+        <input type="text"
+        placeholder='Enter details' 
+        className='p-2 border border-gray-300 rounded-md'/>
       </form>
     </div>
   )
