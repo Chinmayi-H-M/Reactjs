@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className='h-screen bg-black'>
+    <div className='h-screen bg-black text-white'>
       <form className="flex justify-between flex-col p-10">
         <input type="text" 
         placeholder='Enter task heading' 
