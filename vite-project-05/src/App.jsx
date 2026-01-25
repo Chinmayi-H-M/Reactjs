@@ -26,14 +26,16 @@ const App = () => {
 
   return (
     <div>
-      <h1>Value  os a is {a}.</h1>
+      <h1 className='change'>Value  os a is {a}.</h1>
       <button onClick={onclickis}>Click</button>
 
-      <h1>{num}</h1>
+      <div className='num1'>
+        <div className='num'>{num}</div>
+        </div>
       <button onClick={increaseNum}>Increase</button>
       <button onClick={decreaseNum}>Decrease</button>
       <button onClick={jump5Num}>Jump by 5</button>
-      <button onClick={btnClicked}>Click</button>
+      <button onClick={btnclicked}>Click</button>
     </div>
   )
 }
