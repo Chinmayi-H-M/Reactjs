@@ -6,11 +6,11 @@ const App = () => {
     alert("Task added successfully!");
   }
   return (
-    <div className='h-screen bg-black text-white'>
+    <div className='h-screen lg:flex bg-black text-white'>
     <form onSubmit={(e)=>{
         submitHandler(e);
       }
-    }className="flex items-start justify-between p-10 gap-4">
+    }className="flex items-start lg:w-1/2 p-10 gap-4">
         <div className='flex flex-col p-5 items-start gap-4'>
           <input type="text"
             placeholder='Enter task heading'
