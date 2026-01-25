@@ -22,6 +22,9 @@ const App = () => {
         </div>
         <img className="h-60" src="https://pngimg.com/uploads/notebook/notebook_PNG19227.png" alt="" />
       </form>
+      <div className="flex flex-wrap p-10">
+        <div className="h-32 w-32 rounded-2xl bg-white"></div>
+      </div>
     </div>
   )
 }
