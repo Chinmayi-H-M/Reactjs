@@ -1,9 +1,16 @@
 import React from 'react'
 
 const App = () => {
+  const submitHandler=(e)=>{
+    e.preventDefault();
+    alert("Task added successfully!");
+  }
   return (
     <div className='h-screen bg-black text-white'>
-      <form className="flex items-start justify-between p-10 gap-4">
+    <form onSubmit={(e)=>{
+        submitHandler(e);
+      }
+    }className="flex items-start justify-between p-10 gap-4">
         <div className='flex flex-col p-5 items-start gap-4'>
           <input type="text"
             placeholder='Enter task heading'
