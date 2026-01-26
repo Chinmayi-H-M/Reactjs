@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const App = () => {
   const [title, setTitle] = useState("")
+  const [details, setDetails] = useState("")
   const submitHandler=(e)=>{
     e.preventDefault();
     alert("Task added successfully!");
@@ -26,7 +27,12 @@ const App = () => {
             />
           <textarea type="text"
             placeholder='Enter details'
-            className='px-5 py-2 h-20 border border-gray-300 outline-none rounded-md' />
+            className='px-5 py-2 h-20 border border-gray-300 outline-none rounded-md'
+            value={details}
+            onChange={(e)=>{
+              setDetails(e.target.value);
+            }}
+            />
           <button className="p-2 bg-blue-500 text-white rounded-md">Add Task</button>
         </div>
         
