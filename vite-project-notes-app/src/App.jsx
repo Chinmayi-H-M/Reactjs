@@ -24,7 +24,7 @@ const App = () => {
         
       </form>
       <div className="lg:w-1/2 lg:border-l-2 bg-gray-900 p-10">
-        <h1 className="text-2xl font-bold">Your Tasks</h1>
+        <h1 className="text-2xl font-bold">Recent Tasks</h1>
         <div className='flex flex-wrap gap-4 mt-5 overflow-auto min-h-full'>
         <div className="h-52 w-40 rounded-2xl bg-white"></div>
         </div>
