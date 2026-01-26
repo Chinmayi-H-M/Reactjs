@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
 const App = () => {
+  const [title, setTitle] = useState("")
   const submitHandler=(e)=>{
     e.preventDefault();
     alert("Task added successfully!");
   }
-  const [title, setTitle] = useState("")
+  
   return (
     <div className='h-screen lg:flex bg-black text-white'>
     <form onSubmit={(e)=>{
