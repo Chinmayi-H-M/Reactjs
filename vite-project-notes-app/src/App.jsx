@@ -22,9 +22,11 @@ const App = () => {
         </div>
         <img className="h-60" src="https://pngimg.com/uploads/notebook/notebook_PNG19227.png" alt="" />
       </form>
-      <div className="flex lg:w-1/2 gap-20 bg-gray-900 flex-wrap p-10">
+      <div className="lg:w-1/2 gap-20 bg-gray-900 flex-wrap p-10">
         <h1 className="text-2xl font-bold">Your Tasks</h1>
+        <div className='flex flex-wrap gap-4'>
         <div className="h-52 w-40 rounded-2xl bg-white"></div>
+        </div>
       </div>
     </div>
   )
