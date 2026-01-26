@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
   const submitHandler=(e)=>{
     e.preventDefault();
     alert("Task added successfully!");
   }
+  const [title, setTitle] = useState("")
   return (
     <div className='h-screen lg:flex bg-black text-white'>
     <form onSubmit={(e)=>{
         submitHandler(e);
       }
+      
     }className="flex flex-col items-start lg:w-1/2 p-10 gap-4">
       <h1 className="text-3xl font-bold">Add Notes</h1>
         <div className='flex flex-col p-5 items-start gap-4'>
           <input type="text"
             placeholder='Enter task heading'
-            className="px-5 py-2 border border-gray-300  outline-none rounded-md" />
+            className="px-5 py-2 border border-gray-300  outline-none rounded-md" 
+            value={title}
+            onChange={(e)=>{
+              setTitle(e.target.value);
+            }}
+            />
           <textarea type="text"
             placeholder='Enter details'
             className='px-5 py-2 h-20 border border-gray-300 outline-none rounded-md' />
