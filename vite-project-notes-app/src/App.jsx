@@ -7,6 +7,7 @@ const App = () => {
     e.preventDefault();
     alert("Task added successfully!");
     setTitle("");
+    setDetails("");
   }
   
   return (
