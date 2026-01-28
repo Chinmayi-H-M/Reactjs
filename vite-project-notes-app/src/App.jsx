@@ -8,7 +8,7 @@ const App = () => {
     e.preventDefault();
     alert("Task added successfully!");
     console.log("Ur task added successfully");
-    const copyTasks=[];
+    const copyTasks=[...tasks];
     setTitle("");
     setDetails("");
   }
