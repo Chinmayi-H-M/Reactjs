@@ -38,7 +38,7 @@ const App = () => {
               setDetails(e.target.value);
             }}
             />
-          <button className="p-2 bg-blue-500 text-white rounded-md">Add Task</button>
+          <button className="p-2 active:bg-gray-400 bg-blue-500 text-white rounded-md">Add Task</button>
         </div>
         
       </form>
