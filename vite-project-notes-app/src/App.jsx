@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const App = () => {
   const [title, setTitle] = useState("")
   const [details, setDetails] = useState("")
+  const [tasks,setTasks]=useState([])
   const submitHandler=(e)=>{
     e.preventDefault();
     alert("Task added successfully!");
