@@ -6,6 +6,7 @@ const App = () => {
   const submitHandler=(e)=>{
     e.preventDefault();
     alert("Task added successfully!");
+    console.log("Ur task added successfully");
     setTitle("");
     setDetails("");
   }
