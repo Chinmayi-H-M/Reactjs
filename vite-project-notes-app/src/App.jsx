@@ -9,6 +9,8 @@ const App = () => {
     alert("Task added successfully!");
     console.log("Ur task added successfully");
     const copyTasks=[...tasks];
+    copyTasks.push({title,details});
+    
     setTitle("");
     setDetails("");
   }
