@@ -50,7 +50,7 @@ const App = () => {
            {tasks.map(function(task,idx){
             return <div key={idx} className="h-52 w-40 rounded-2xl text-black bg-white p-4">
               <h2 className="font-bold">{task.title}</h2>
-              <p>{task.details}</p>
+              <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
             </div>
            })}
         </div>
