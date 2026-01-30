@@ -46,14 +46,14 @@ const App = () => {
       </form>
       <div className="lg:w-1/2 lg:border-l-2 bg-gray-900 p-10">
         <h1 className="text-2xl font-bold">Recent Tasks</h1>
-        <div className='flex flex-wrap items-start gap-4  justify-start mt-5 overflow-auto min-h-full'>
+        <div className='flex flex-wrap items-start gap-4  justify-start mt-5 overflow-auto h-[90%]'>
           {tasks.map(function (task, idx) {
             return <div key={idx} className="h-52 w-45 rounded-2xl text-black bg-white py-13 px-4 bg-[url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png')] bg-cover bg-center ">
               <div>
                 <h2 className="font-bold">{task.title}</h2>
                 <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
               </div>
-                <button className="w-full p-2 active:bg-gray-400 rounded-md font-bold bg-red-500 text-white">Delete Note</button>
+                <button onClick=''className="w-full p-2 active:bg-gray-400 active:scale-95 rounded-md font-bold bg-red-500 text-white">Delete Note</button>
               </div>
            })}
             </div>
