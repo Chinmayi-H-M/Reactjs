@@ -15,8 +15,11 @@ const App = () => {
     setDetails("");
   }
 
-  const deketeNote=()=>{
+  const deleteNote=(idx)=>{
     console.log("Note deleted successfully");
+    const copyTasks = [...tasks];
+    copyTasks.splice(idx,1);
+    setTasks(copyTasks);
   }
 
   return (
@@ -57,7 +60,9 @@ const App = () => {
                 <h2 className="font-bold">{task.title}</h2>
                 <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
               </div>
-                <button onClick=''className="w-full p-2 active:bg-gray-400 active:scale-95 rounded-md font-bold bg-red-500 text-white">Delete Note</button>
+                <button onClick={()=>{
+                  deleteNote(idx)}} 
+                  className="w-full p-2 active:bg-gray-400 active:scale-95 rounded-md font-bold bg-red-500 text-white">Delete Note</button>
               </div>
            })}
             </div>
