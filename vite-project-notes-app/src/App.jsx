@@ -15,6 +15,10 @@ const App = () => {
     setDetails("");
   }
 
+  const deketeNote=()=>{
+    console.log("Note deleted successfully");
+  }
+
   return (
     <div className='h-screen lg:flex bg-black text-white'>
       <form onSubmit={(e) => {
