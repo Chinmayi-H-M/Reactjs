@@ -48,7 +48,7 @@ const App = () => {
         <h1 className="text-2xl font-bold">Recent Tasks</h1>
         <div className='flex flex-wrap items-start gap-4  justify-start mt-5 overflow-auto min-h-full'>
            {tasks.map(function(task,idx){
-            return <div key={idx} className="h-52 w-40 rounded-2xl text-black bg-white py-9 px-4 bg-[url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png')] bg-cover">
+            return <div key={idx} className="h-52 w-45 rounded-2xl text-black bg-white py-13 px-4 bg-[url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png')] bg-cover bg-center ">
               <h2 className="font-bold">{task.title}</h2>
               <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
             </div>
