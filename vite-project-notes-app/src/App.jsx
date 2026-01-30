@@ -46,9 +46,9 @@ const App = () => {
       </form>
       <div className="lg:w-1/2 lg:border-l-2 bg-gray-900 p-10">
         <h1 className="text-2xl font-bold">Recent Tasks</h1>
-        <div className='flex flex-wrap gap-4 mt-5 overflow-auto min-h-full'>
+        <div className='flex flex-wrap items-start gap-4  justify-start mt-5 overflow-auto min-h-full'>
            {tasks.map(function(task,idx){
-            return <div key={idx} className="h-52 w-40 rounded-2xl text-black bg-white p-4">
+            return <div key={idx} className="h-52 w-40 rounded-2xl text-black bg-white p-4 bg-[url('https://img.freepik.com/free-vector/yellow-note-paper-with-red-pin_1284-42430.jpg?semt=ais_hybrid&w=740&q=80')] bg-cover">
               <h2 className="font-bold">{task.title}</h2>
               <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
             </div>
