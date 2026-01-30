@@ -53,7 +53,7 @@ const App = () => {
                 <h2 className="font-bold">{task.title}</h2>
                 <p className='mt-4 leading-tight font-medium text-gray-500'>{task.details}</p>
               </div>
-                <button className="w-full p-2 active:bg-gray-400 bg-red-500 text-white rounded-md">Delete Note</button>
+                <button className="w-full p-2 active:bg-gray-400 rounded-md font-bold bg-red-500 text-white">Delete Note</button>
               </div>
            })}
             </div>
