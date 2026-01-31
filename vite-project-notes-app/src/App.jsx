@@ -30,7 +30,7 @@ const App = () => {
 
       } className="flex flex-col items-start lg:w-1/2 p-10 gap-4">
         <h1 className="text-3xl font-bold">Add Notes</h1>
-        <div className='flex flex-col p-5 items-start gap-4'>
+        <div className='flex flex-col p-5 items-stretch gap-4 w-full max-w-md'>
           <input type="text"
             placeholder='Enter task heading'
             className="w-full px-5 py-2 border border-gray-300  outline-none rounded-md"
