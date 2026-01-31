@@ -55,10 +55,10 @@ const App = () => {
         <h1 className="text-2xl font-bold">Recent Tasks</h1>
         <div className='flex flex-wrap items-start gap-4  justify-start mt-5 overflow-auto h-[90%]'>
           {tasks.map(function (task, idx) {
-            return <div key={idx} className="h-52 w-45 rounded-2xl text-black bg-white py-13 px-4 bg-[url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png')] bg-cover bg-center ">
+            return <div key={idx} className="h-52 w-44 rounded-2xl text-black bg-white py-10 px-3 flex flex-col justify-between bg-[url('https://cdn.pixabay.com/photo/2017/03/18/17/46/notepad-2154581_640.png')] bg-cover bg-center ">
               <div>
                 <h2 className="font-bold">{task.title}</h2>
-                <p className='mt-2 font-medium text-gray-500 overflow-y-auto max-h-20'>{task.details}</p>
+                <p className='mt-2 leading-tight font-medium text-gray-500 line-clamp-4'>{task.details}</p>
               </div>
                 <button onClick={()=>{
                   deleteNote(idx)}} 
