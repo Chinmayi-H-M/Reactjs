@@ -33,7 +33,7 @@ const App = () => {
         <div className='flex flex-col p-5 items-start gap-4'>
           <input type="text"
             placeholder='Enter task heading'
-            className="px-5 py-2 border border-gray-300  outline-none rounded-md"
+            className="w-full px-5 py-2 border border-gray-300  outline-none rounded-md"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
@@ -41,7 +41,7 @@ const App = () => {
           />
           <textarea type="text"
             placeholder='Enter details'
-            className='px-5 py-2 h-20 border border-gray-300 outline-none rounded-md'
+            className='w-full px-5 py-2 h-20 border border-gray-300 outline-none rounded-md'
             value={details}
             onChange={(e) => {
               setDetails(e.target.value);
