@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/hero'
+import TrustedBy from './components/TrustedBy'
+import Services from './components/Services'
 
 const App = () => {
   const [theme, setTheme] = useState(() => {
@@ -19,8 +22,12 @@ const App = () => {
   }, [theme])
 
   return (
-    <div className="bg-white dark:bg-black min-h-screen transition-colors duration-300">
+    <div className="bg-white dark:bg-black  transition-colors duration-300">
       <Navbar theme={theme} setTheme={setTheme} />
+      <Hero />
+      <TrustedBy />
+      <Services />
+
     </div>
   )
 }
