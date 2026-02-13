@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import assets from '../assets/assets'
+import Theme from './theme'
 
 const Navbar = ({theme,setTheme}) => {
     const [sideBar, setSidebar]=useState(false)
@@ -16,11 +17,13 @@ const Navbar = ({theme,setTheme}) => {
         <a onClick={()=>setSidebar(false)} href="#" className="sm:hover:border-b">Home</a>
         <a onClick={()=>setSidebar(false)} href="#services" className="sm:hover:border-b">Services</a>
         <a onClick={()=>setSidebar(false)} href="#our-work" className="sm:hover:border-b">Our Work</a>
-        <a onClick={()=>setSidebar(false)} href="#contact-us" className="sm:hover:border-b">Home</a>
+        <a onClick={()=>setSidebar(false)} href="#contact-us" className="sm:hover:border-b">Contact us</a>
       </div>
       
 
       <div className='flex items-center gap-4'>
+
+        <Theme theme={theme} setTheme={setTheme}/>
         <img src={theme==="dark" ? assets.menu_icon_dark : assets.menu_icon} alt="" onClick={()=>setSidebar(true)} className='w-8 sm:hidden'/>
         <a href="#contact-us" className='text-sm max-sm:hidden flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
             Connect <img src={assets.arrow_icon} width={14} alt="" />
