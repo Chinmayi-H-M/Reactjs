@@ -1,6 +1,7 @@
 import React from 'react'
 import assets from '../assets/assets'
 import Title from './Title'
+import ServiceCard from './ServiceCard'
 
 const Services = () => {
     const servicesData=[
@@ -29,6 +30,11 @@ const Services = () => {
     <div id='services' className="relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white">
         <img src={assets.bgImage2} alt="" className="absolute -top-110 -left-70 -z-1 dark:hidden"/>
       <Title title='How can we help you?' desc='This is the platform where you get assistance for all your digital marketing needs.'/>
+      <div flex flex-col md:grid md-grid-cols-2>
+        {servicesData.map((service,index)=>(
+            <ServiceCard key={index} service={service} index={index}/>
+        ))}
+      </div>
     </div>
   )
 }
