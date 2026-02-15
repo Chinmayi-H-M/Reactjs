@@ -12,7 +12,7 @@ const Teams = () => {
                     <img src={team.image} alt={team.name} className='w-12 h-12 rounded-full'/>
                     <div className="flex-1">
                          <h3 className='text-sm font-semibold'>{team.name}</h3>
-                         <p className='text-xs opacity-60 text-white'>{team.role}</p>
+                         <p className='text-xs text-gray-500 dark:text-gray-400'>{team.title}</p>
                     </div>
                 </div>
             ))}
