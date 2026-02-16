@@ -12,6 +12,8 @@ const App = () => {
     city:"Bhopal"
   }
   localStorage.setItem("user",JSON.stringify(user));
+  const user1=JSON.parse(localStorage.getItem("user"));
+  console.log(user1);
 
 
   
