@@ -1,4 +1,5 @@
 import React from 'react'
+import UseEffectSlippet from './useEffectSlippet';
 //axios can also be used
 const App = () => {
   const getData=async()=>{
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <div>
       <button onClick={getData}>Get Data</button>
+      <UseEffectSlippet />
     </div>
   )
 }
