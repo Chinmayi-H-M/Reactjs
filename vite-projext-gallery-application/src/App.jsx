@@ -4,18 +4,18 @@ import {useState,useEffect} from 'react'
 
 const App = () => {
   const [userData, setUserData] = useState([])
-  const [index, setIndex] = useState(2)
+  const [index, setIndex] = useState(1)
   const getData = async()=>{
     
-    const response=await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=100`)
+    const response=await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`)
     setUserData(response.data)
   }
   useEffect(function(){
     getData();
-  },[])
+  },[index])
 
   // let printUserData="No userVAvailable"
-  let printUserData=<h1 className='text-gray-400 text-xs'>No user Available</h1>
+  let printUserData=<h1 className='text-gray-400 text-xs absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>Loading </h1>
   if(userData.length > 0){
     printUserData = userData.map(function(item){
       return <div key={item.id}>
@@ -36,10 +36,11 @@ const App = () => {
         {printUserData}
       </div>
       <div className="flex justify-center gap-10 mt-5 items-center p-4">
-        <button onClick={()=>{
+        <button style={{opacity: index==1 ?0.5 : 1}} onClick={()=>{
           if(index>1){
           setIndex(index-1);}
         }}className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Prev</button>
+        <h4>Page {index}</h4>
         <button onClick={()=>{
           setIndex(index+1);
         }} className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Next</button>
