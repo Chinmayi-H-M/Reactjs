@@ -1,53 +1,75 @@
-import React from 'react'
-import axios from 'axios';
-import {useState,useEffect} from 'react'
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 const App = () => {
-  const [userData, setUserData] = useState([])
-  const [index, setIndex] = useState(1)
-  const getData = async()=>{
-    
-    const response=await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`)
-    setUserData(response.data)
-  }
-  useEffect(function(){
-    getData();
-  },[index])
+  const [userData, setUserData] = useState([]);
+  const [index, setIndex] = useState(1);
 
-  // let printUserData="No userVAvailable"
-  let printUserData=<h1 className='text-gray-400 text-xs absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>Loading </h1>
-  if(userData.length > 0){
-    printUserData = userData.map(function(item){
-      return <div key={item.id}>
-      <a href={item.url} target="_blank">
-      <div className="h-40 w-44 bg-white overflow-hidden" key={item.id} ><img className="h-full object-cover" src={item.download_url} alt={item.author} /></div>
-      <h2 className="text-white font-bold">{item.author}</h2>
-      </a>
-      </div>
-      
-    })
-  }
+  const getData = async () => {
+    try {
+      const response = await axios.get(
+        `https://picsum.photos/v2/list?page=${index}&limit=10`
+      );
+      setUserData(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, [index]);
 
   return (
-    <div className="bg-black text-white p-3 overflow-auto ">
-      {/* <button onClick={getData} className='bg-green-600 active:scale-95 px-5 m-4 py-2 rounded text-white'>Get data</button> */}
+    <div className="bg-black text-white min-h-screen p-5">
 
-      <div>
-        {printUserData}
-      </div>
-      <div className="flex justify-center gap-10 mt-5 items-center p-4">
-        <button style={{opacity: index==1 ?0.5 : 1}} onClick={()=>{
-          if(index>1){
-          setIndex(index-1);}
-        }}className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Prev</button>
-        <h4>Page {index}</h4>
-        <button onClick={()=>{
-          setIndex(index+1);
-        }} className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Next</button>
+      {/* Images Section */}
+      {userData.length === 0 ? (
+        <h1 className="text-gray-400 text-center mt-20">
+          Loading...
+        </h1>
+      ) : (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {userData.map((item) => (
+            <div key={item.id} className="text-center">
+              <a href={item.url} target="_blank" rel="noreferrer">
+                <div className="h-48 w-full bg-white overflow-hidden rounded-lg">
+                  <img
+                    className="h-full w-full object-cover"
+                    src={`https://picsum.photos/id/${item.id}/300/300`}
+                    alt={item.author}
+                  />
+                </div>
+                <h2 className="mt-2 font-semibold">
+                  {item.author}
+                </h2>
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
 
+      {/* Pagination Section */}
+      <div className="flex justify-center gap-10 mt-10 items-center">
+        <button
+          disabled={index === 1}
+          onClick={() => setIndex((prev) => prev - 1)}
+          className="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded disabled:opacity-50"
+        >
+          Prev
+        </button>
+
+        <h4 className="text-lg font-bold">Page {index}</h4>
+
+        <button
+          onClick={() => setIndex((prev) => prev + 1)}
+          className="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded"
+        >
+          Next
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
